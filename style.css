@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main {
+  background-image: url("https://github.com/Karthigasaravana/portfolio/blob/main/karthu.jpg?raw=true");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  width: 20%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #020006;
+  position: sticky;
+  top: 0;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+  list-style-type: none;
+  display: inline-block;
+  padding: 15px;
+}
+
+nav ul li a {
+  color: #F7F7F7;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #D91E62;
+  transition: 0.4s;
+}
+
+.content {
+  font-size: 30px;
+  color: #F7F7F7;
+  padding-top: 30%;
+  padding-left: 7%;
+}
+
+.content span {
+  color: #ff004f;
+}
+
+.content h4 {
+  font-size: 50px;
+}
+
+.content p {
+  font-size: 25px;
+  color: #F7F7F7;
+}
+
+#about {
+  padding-top: 150px;
+  margin-top: 20px;
+  color: #020006;
+  background-color: black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+  background-color: #020006;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #F7F7F7;
+  background-color: #020006;
+}
+
+.about-col-2 h5 {
+  margin-top: 20px;
+  color: #F7F7F7;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.about-col-2 h5 span {
+  color: #D91E62;
+}
+
+.p {
+  color: #EAA4AE;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 20px;
+  margin-bottom: 45px;
+}
+
+button {
+  margin-top: 25px;
+  background-color: #D91E62;
+  color: #F7F7F7;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 2px solid #D91E62;
+  cursor: pointer;
+}
+
+#skillsection {
+  padding-top: 120px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 80px;
+  background-color: #020006;
+  height: 775px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#skillsection .sub-title {
+  padding: 50px;
+}
+
+#skillsection .subject {
+  font-size: 17px;
+  font-weight: thin;
+  color: #F7F7F7;
+  padding: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.about-col-1 {
+  grid-area: imagesect;
+  border: 1px solid white;
+}
+
+.about-col-2 {
+  grid-area: infosect;
+}
+
+.progrees_bar {
+  height: 16px;
+  background-color: #F7F7F7;
+  padding: 4px 6px;
+  border-top: 1px solid #D91E62;
+  border-bottom: 1px solid #EAA4AE;
+  border-radius: 15px;
+}
+
+.progrees_line {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #D91E62;
+  box-shadow: -1px -1px 2px #D91E62, 1px 1px 2px #D91E62;
+  border-radius: 15px;
+}
+
+.progrees_line::after {
+  position: absolute;
+  content: attr(value);
+  top: -35px;
+  right: 0px;
+  transform: translateX(-50%);
+  color: #F7F7F7;
+  font-size: 17px;
+}
+
+#skillsection h2 {
+  text-align: center;
+}
+
+#contact {
+  background-color: #020006;
+  color: #F7F7F7;
+  height: 775px;
+  padding-top: 180px;
+}
+
+.contact-left {
+  flex-basis: 35%;
+  padding-left: 30px;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 20px;
+}
+
+.contact-left p i {
+  color: #D91E62;
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.contact-left a {
+  text-decoration: none;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  padding: 10px;
+  color: #F7F7F7;
+  display: inline-block;
+  transition: transform 0.5s;
+  margin-top: 15px;
+}
+
+.social-icons a:hover {
+  color: #D91E62;
+  transform: translateY(-5px);
+}
+
+.btn.btn2 {
+  display: inline-block;
+  background: #D91E62;
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #F7F7F7;
+  display: inline-block;
+  transition: transform 0.5s;
+  margin-top: 15px;
+  padding: 11px 20px;
+  border-radius: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #F7F7F7;
+  padding: 15px;
+  margin: 15px 0;
+  color: #020006;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form.btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.contact-right form {
+  width: 70%;
+}
+
+#contact a {
+  color: #F7F7F7;
+}
